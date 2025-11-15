@@ -24,6 +24,7 @@ nav{
   margin: 0 auto;
   margin-top: 30px;
   gap: 100px;
+  justify-content: space-between;
 }
 
 .navigation{
@@ -131,4 +132,111 @@ nav{
     overflow: hidden;
     clip-path: rect(0,0,0,0);
     border: 0;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+/* MOBIL + TABLET (op til 768px) */
+
+@media screen and (max-width: 768px){
+
+     /* Header-styling */
+    header {
+        flex-direction: row;
+        align-items: stretch;
+        border-bottom: 1px color #162A41;
+        padding: 20px;
+    }
+
+     header .logo {
+        height: 70px;
+        margin: 0 auto 10px auto;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    /* Søg-feltet fylder hele bredden */
+    .nav-search {
+        order: 1;
+        width: 40%;
+        margin: 0 0 12px 0;
+        margin-left: auto;
+    }
+
+    .nav-search input {
+        width: 100%;
+    }
+
+    /* Burger-menu knap */
+    .mobile-menu-btn {
+        display: flex;
+        order: 2;
+        align-items: center;
+        margin-left: auto;
+        gap: 6px;
+        cursor: pointer;
+        margin-bottom: 12px;
+        font-family: 'Be Vietnam Pro';
+        font-size: 18px;
+        font-weight: 600;
+        color: #162A41;
+    }
+
+    .burger-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* Skjul desktop-navigation */
+    .navigation {
+        display: none;
+        flex-direction: column;
+        background: #162A41;
+        width: 100%;
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    /* Navigation vises når burger-menu aktiveres */
+    .navigation.active {
+        display: flex;
+    }
+
+    /* Links i mobilmenu */
+    .navigation > li > a {
+        color: white;
+        font-size: 20px;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Dropdowns skjult fra start */
+    .dropdown {
+        display: none;
+        position: static;
+        background: #0d1a2b;
+        padding-left: 20px;
+    }
+
+    /* Dropdown åben */
+    .dropdown.open {
+        display: block;
+    }
+
+    /* Pile roterer ved klik */
+    .arrow {
+        transition: transform 0.3s ease;
+    }
+    .arrow.rotate {
+        transform: rotate(90deg);
+    }
+
 }
