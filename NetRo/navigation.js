@@ -1,10 +1,8 @@
-console.log('hej2')
 const menuBtn = document.querySelector('.mobile-menu-btn');
 const navList = document.querySelector('.navigation');
 
 
 menuBtn.addEventListener('click', () => {
-    console.log('hej')
     navList.classList.toggle('active');
 });
 

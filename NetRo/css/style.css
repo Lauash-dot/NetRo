@@ -138,59 +138,68 @@ nav{
     display: none;
 }
 
+.arrow.mobile-only {
+    display: none; /* skjult som standard */
+    width: 40px;
+    height: 40px;
+}
+
 /* MOBIL + TABLET (op til 768px) */
 
 @media screen and (max-width: 768px){
 
      /* Header-styling */
     header {
+        display: flex;
         flex-direction: row;
-        align-items: stretch;
-        border-bottom: 1px color #162A41;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #162A41;
         padding: 20px;
     }
 
      header .logo {
         height: 70px;
-        margin: 0 auto 10px auto;
+        margin: 0;
     }
     
     nav {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin: 0;
+        width: auto;
     }
 
     /* Søg-feltet fylder hele bredden */
     .nav-search {
         order: 1;
-        width: 40%;
-        margin: 0 0 12px 0;
-        margin-left: auto;
+        width: 180px;
     }
 
     .nav-search input {
         width: 100%;
+        box-sizing: border-box;
     }
 
     /* Burger-menu knap */
     .mobile-menu-btn {
         display: flex;
+        flex-direction: column-reverse;
         order: 2;
         align-items: center;
-        margin-left: auto;
-        gap: 6px;
+        gap: 0px;
+        margin: 0;
         cursor: pointer;
-        margin-bottom: 12px;
         font-family: 'Be Vietnam Pro';
-        font-size: 18px;
-        font-weight: 600;
-        color: #162A41;
+        font-size: 16px;
+        font-weight: 400;
+        color: #E69A27;
     }
 
     .burger-icon {
-        width: 26px;
-        height: 26px;
+        width: 50px;
+        height: 50px;
     }
 
     /* Skjul desktop-navigation */
@@ -198,9 +207,13 @@ nav{
         display: none;
         flex-direction: column;
         background: #162A41;
-        width: 100%;
         padding: 20px 0;
         gap: 10px;
+        position: fixed;
+        top: 110px;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
     }
 
     /* Navigation vises når burger-menu aktiveres */
@@ -231,11 +244,14 @@ nav{
         display: block;
     }
 
-    /* Pile roterer ved klik */
-    .arrow {
+     .arrow.mobile-only {
+        display: inline-block;
         transition: transform 0.3s ease;
     }
-    .arrow.rotate {
+
+    /* Pile roterer ved klik */
+    
+    .arrow.mobile-only.rotate {
         transform: rotate(90deg);
     }
 
