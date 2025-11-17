@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* HEADER STYLING */
 header{
     display: flex;
     align-items: center;
@@ -16,6 +17,8 @@ header .logo{
     height: 90px;
     margin-left: 40px;
 }
+
+/* NAVIGATION STYLING */
 
 nav{
   display: flex;              
@@ -49,6 +52,8 @@ nav{
     text-decoration: underline;
 }
 
+/* DROPDOWN MENU */
+
 .dropdown{
     display: none;
     position: absolute;
@@ -76,6 +81,8 @@ nav{
     display: block;
 }
 
+/* ARROW ROTATION */
+
 .arrow{
     width: 12px;
     height: 12px;
@@ -87,7 +94,7 @@ nav{
     transform: rotate(180deg);
 }
 
-/*Søgefelt desktop*/
+/* SØGEFELT */
 
 .nav-search{
     display: flex;
@@ -124,6 +131,8 @@ nav{
     height: 22px;
 }
 
+/* SKJULT TEKST TIL SKÆRMLÆSERE */
+
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -135,17 +144,21 @@ nav{
     border: 0;
 }
 
+/* MOBILMENU KNAP SKJULT DESKTOP */
+
 .mobile-menu-btn {
     display: none;
 }
 
+/* MOBIL ARROWS SKJULT DEKSTOP */
+
 .arrow.mobile-only {
-    display: none; /* skjult som standard */
+    display: none; 
     width: 40px;
     height: 40px;
 }
 
-/*Sektion 1/intro - slider*/
+/* SEKTION 1 / INTRO SLIDER */
 
 .intro-title {
     margin-left: 40px;
@@ -241,15 +254,13 @@ nav{
     padding: 0.3rem 0.7rem;
 }
 
-.btn {
-    display: none;  /* skjul som standard */
-}
 
 /* MOBIL + TABLET (op til 768px) */
 
 @media screen and (max-width: 768px){
 
-     /* Header-styling */
+     /* HEADER STYLING */
+
     header {
         display: flex;
         flex-direction: row;
@@ -264,6 +275,8 @@ nav{
         margin: 0;
     }
     
+    /* NAVIGATION */
+
     nav {
         display: flex;
         align-items: center;
@@ -363,36 +376,86 @@ nav{
     /* SLIDER — MOBIL VERSION */
 
     .intro-section {
-    padding: 20px 15px;
+    padding: 0px 2px;
+    }
+
+    .intro-title{
+    font-size: 36px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    }
+
+    .slide-image img{
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: fill;
+    display: block; 
+    }
+
+    .slide-image{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: auto;
+    }
+
+    .slide-text {
+    text-align: center;
+    width: 100% !important;
+    max-width: 95% !important;
+    box-sizing: border-box;
+    margin-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .slide-text h2{
+    font-size: 24px;
+    }
+
+    .slide-text p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 0.1rem;
     }
 
     .slide {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    align-items: center;
+    align-items: stretch;
+    position: relative;
     }
 
     .slider-arrow {
     position: absolute;
-    top: 45%;
+    top: 50%;
     transform: translateY(-50%);
     background: white;
     border-radius: 50%;
+    left: 10px;
+    right: 10px;
     padding: 5px 10px;
     font-size: 1.8rem;
+    z-index: 10;
     }
 
-    .arrow.left {
-    left: 0;
-    }
+    .btn {
+    display: inline-block;        
+    background-color: #162A41;    
+    color: #ffffff;              
+    font-size: 15px;             
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1rem auto 0;
+    margin-top: 1rem;  
+    margin-bottom: 1rem;           
+    text-align: center;
+    text-decoration: none;
+    }  
 
-    .arrow.right {
-    right: 0;
-    }
-
-    .slide-text {
-    max-width: 100%;
-    }
 
 }
