@@ -210,7 +210,7 @@ nav{
 
 .slide-image img {
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
     height: 400px;
     object-fit: fill;
     display: block; 
@@ -252,6 +252,55 @@ nav{
     font-size: 2rem;
     cursor: pointer;
     padding: 0.3rem 0.7rem;
+}
+
+.btn{ 
+    display: none;
+}
+
+/* SEKTION 2 */
+
+.section-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color:white; 
+}
+
+.box{
+    background-color: #0d1a2b;
+    color: white;
+    padding: 20px 20px;
+    width: 25%;
+    text-align: left;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 0 40px;
+}
+
+.box h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.box p{
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.box img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
 }
 
 
@@ -373,7 +422,7 @@ nav{
         transform: rotate(90deg);
     }
 
-    /* SLIDER — MOBIL VERSION */
+    /* SEKTION 1 / INTRO SLIDER */
 
     .intro-section {
     padding: 0px 2px;
@@ -456,6 +505,12 @@ nav{
     text-align: center;
     text-decoration: none;
     }  
+
+    /* SEKTION 2 */
+
+    .section-2{
+        display: none;
+    }
 
 
 }
