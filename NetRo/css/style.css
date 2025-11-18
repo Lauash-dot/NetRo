@@ -778,6 +778,62 @@ nav{
     display: inline-block;
     }
 
+    /* PHISHING CONTENT */
+    
+    .phishing-content nav[aria-label="Brødkrumme-navigation"] ol {
+        display: none;
+    }
+
+    /* SEKTION 4 */
+
+    .section-4 h1{
+        font-size: 30px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .section-4 p{
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: left;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+
+    .section-4 img{
+        margin-bottom: 2px;
+    }
+
+    /* SEKTION 5 */
+
+    .section-5 h3{
+        font-size: 24px;
+    }
+
+    .section-5 p{
+        font-size: 18px;
+        padding: 0px 10px;
+        padding-bottom: 40px;
+    }
+
+    .section-5 iframe{
+        width: 90%;
+        height: 340px;
+    }
+
+    /* SEKTION 6 og 7 */
+
+    .section-6 h2, .section-7 h2{
+        font-size: 28px;
+        text-decoration: underline;
+    }
+
+    .section-6 li, .section-7 li{
+        font-size: 18px;
+        padding-right: 30px;
+    }
+
     /* FOOTER */
 
     .footer-banner{
