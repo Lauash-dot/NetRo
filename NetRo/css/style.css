@@ -405,6 +405,131 @@ nav{
     color: #0d1a2b;
 }
 
+/*------------------- UNDERSIDE PHISHING CONTENT ---------------------*/
+
+.phishing-content{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.phishing-content nav[aria-label="Brødkrumme-navigation"] ol {
+    list-style: none;
+    padding: 0 40px;
+    display: flex;
+    font-size: 0.9rem;
+}
+
+.phishing-content nav[aria-label="Brødkrumme-navigation"] li {
+    margin-right: 5px;
+}
+
+.phishing-content nav[aria-label="Brødkrumme-navigation"] li::after {
+    content: "/";
+    margin-left: 5px;
+}
+
+.phishing-content nav[aria-label="Brødkrumme-navigation"] li:last-child::after {
+    content: "";
+}
+
+.phishing-content nav[aria-label="Brødkrumme-navigation"] li[aria-current="page"] {
+    font-weight: 100;
+    color:#0d1a2b;
+}
+
+/* SEKTION 4 */
+
+.section-4{
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.section-4 h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #0d1a2b;
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.section-4 .highlight{
+    color: #E69A27;
+}
+
+.section-4 p{
+    font-size: 22px;
+    max-width: 1100px;
+    margin: 0 auto 20px auto;
+    color: #0d1a2b;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.section-4 img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+/* SEKTION 5 */
+
+.section-5{
+    text-align: center;
+    padding-bottom: 60px;
+    background-color: #0d1a2b;
+}
+
+.section-5 h3{
+    font-size: 32px;
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.section-5 p{
+    font-size: 18px;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.section-5 figcaption{
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+/* SEKTION 6 OG 7 */
+
+.section-6 h2, .section-7 h2{
+    padding-top: 60px;
+    font-size: 32px;
+    padding-left: 40px;
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.section-6 ul{
+    padding-left: 70px;
+    font-size: 22px;
+    line-height: 2;
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.section-7 ul{
+    padding-left: 70px;
+    font-size: 22px;
+    line-height: 2;
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
 
 /* MOBIL + TABLET (op til 768px) */
 
@@ -454,7 +579,7 @@ nav{
         gap: 0px;
         margin: 0;
         cursor: pointer;
-        font-family: 'Be Vietnam Pro';
+        font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
         font-size: 16px;
         font-weight: 400;
         color: #E69A27;
