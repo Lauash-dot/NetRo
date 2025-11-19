@@ -255,8 +255,18 @@ nav{
     padding: 0.3rem 0.7rem;
 }
 
-.btn{ 
-    display: none;
+.btn{      
+    width: 20%;
+    background-color: #162A41;    
+    color: #ffffff;              
+    font-size: 15px;             
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 2rem 0;
+    text-decoration: none;
 }
 
 /* SEKTION 2 */
