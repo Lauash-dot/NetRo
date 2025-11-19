@@ -13,16 +13,20 @@
 
 <body>
 
+    <!-- HEADER -->
+
     <header>
         <a href="index.html">
-            <img src="img/NetRo logo2.png" alt="forside" class="logo">
+            <img src="img/NetRo logo2.png" alt="NetRo forside" class="logo">
         </a> 
+
+    <!-- NAVIGATION -->
 
         <nav>
             <ul class="navigation">
                 <li>
-                    <a href="#">Guides <img src="img/fold ud pil.png" alt="fold ud" class="arrow">
-                    <img src="img/pil hvid.png" alt="fold ud mobil" class="arrow mobile-only"></a>
+                    <a href="#">Guides <img src="img/fold ud pil.png" alt="" class="arrow">
+                    <img src="img/pil hvid.png" alt="" class="arrow mobile-only"></a>
                     <ul class="dropdown">
                         <li><a href="#">Videoguides</a></li>
                         <li><a href="#">Trin-for-trin vejledninger</a></li>
@@ -31,8 +35,8 @@
                 </li>
 
                 <li>
-                    <a href="#">Gode råd <img src="img/fold ud pil.png" alt="fold ud" class="arrow">
-                    <img src="img/pil hvid.png" alt="fold ud mobil" class="arrow mobile-only"></a>
+                    <a href="#">Gode råd <img src="img/fold ud pil.png" alt="" class="arrow">
+                    <img src="img/pil hvid.png" alt="" class="arrow mobile-only"></a>
                     <ul class="dropdown">
                         <li><a href="privatlivogdata.html">Privatliv & data</a></li>
                         <li><a href="#">Digital trivsel</a></li>
@@ -43,8 +47,8 @@
                 </li>
 
                 <li>
-                    <a href="#">Hjælp & support <img src="img/fold ud pil.png" alt="fold ud" class="arrow">
-                    <img src="img/pil hvid.png" alt="fold ud mobil" class="arrow mobile-only"></a>
+                    <a href="#">Hjælp & support <img src="img/fold ud pil.png" alt="" class="arrow">
+                    <img src="img/pil hvid.png" alt="" class="arrow mobile-only"></a>
                     <ul class="dropdown">
                         <li><a href="kontaktformular.html">Kontaktformular</a></li>
                         <li><a href="#">Ofte stillede spørgsmål (FAQ)</a></li>
@@ -56,7 +60,7 @@
                 <li><a href="#">Kontakt</a></li>
             </ul>
 
-                <!--Søgefelt i navigationen-->
+    <!--SØGEFELT I NAVIGATION -->
 
                 <form action="#" method="get" class="nav-search" role="search">
                      <label for="nav-search" class="visually-hidden">Søg</label>
@@ -66,14 +70,102 @@
                      </button>
                 </form>  
 
+    <!-- MOBILMENU KNAP/BURGER MENU -->
+
                 <div class="mobile-menu-btn"> 
                     <span>Menu</span>
                     <img src="img/burgermenu.png" alt="menu" class="burger-icon">
                 </div>
-
         </nav>
     </header>
+
+
+
+    <!--Kontaktform - hovedindhold--> 
     
+    <main>
+        <section class="kontaktformular">
+        <h1>Få hjælp til mistænkelig aktivitet</h1>
+            <p class="kontakt-tekst">Udfyld kontaktformularen herunder og så vender vi tilbage til dig</p>
+        </section>
+
+        <form class="kontaktform">
+            <label class="visually-hidden2" for="navn">Navn/alias</label>
+            <input id="navn" type="email" placeholder="Navn/alias" required> <!-- Har måtte kalde denne for email, da den clasher med min nav søgefelt-->
+
+            <label class="visually-hidden2" for="mail">Email-adresse</label>
+            <input id="mail" type="email" placeholder="Email-adresse">
+
+            <!-- Dropdown -->
+
+            <div class="custom-select">
+                <label for="emne">Hvad drejer din henvendelse sig om?</label>
+                <select id="emne">
+                    <option value="0" selected="true" disabled>Vælg det som passer bedst</option>
+                    <option value="1">Jeg har oplevet noget mistænkeligt</option>
+                    <option value="2">Jeg vil rapportere svindel</option>
+                    <option value="3">Jeg ønsker hjælp/vejledning</option>
+                    <option value="4">Andet</option>
+                </select>
+            </div>
+
+            <label for="besked">Beskriv din situation:</label>
+            <textarea id="besked" cols="30" rows="10"></textarea>
+
+            <label for="fil">Har du materiale du vil dele?   **OBS: Del ikke personfølsomme oplysninger eller dokumenter**</label>
+            <input id="fil" type="email" required value="Vedhæft"> <!-- sat som email da det clasher med min nav søgefelt -->
+
+            <fieldset>
+                <legend>Må vi kontakte dig pr. E-mail?</legend>
+                <input id="Ja" type="radio" name="konrakt">
+                <label for="Ja">Ja</label>
+
+                <input id="Nej" type="radio" name="kontakt">
+                <label for="Nej">Nej</label>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Send">
+
+        </form>
+    </main>
+
+    <footer>
+        <section class="footer-banner">
+            <p>NetRo er et initiativ, der hjælper dig med at føle dig tryg, informeret og sikker, når du bevæger dig på nettet</p>
+        </section>
+
+        <nav class="footer-content">
+            <section class="footer-text">
+                <h4>Hurtige links</h4>
+                <ul>
+                    <li><a href="#">Forside</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Gode råd</a></li>
+                    <li><a href="#">Hjælp & support</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-text">
+                <h4>Kontakt os</h4>
+                <ul>
+                    <li>Roersvej 14</li>
+                    <li>2200 København N</li>
+                    <li>Tlf.: 44 55 66 77</li>
+                    <li>Kontakt@netro.dk</li>
+                </ul>
+            </section>
+
+            <section class="footer-text">
+                <h4>Information</h4>
+                <ul>
+                    <li>Privatlivspolitik</li>
+                    <li>Cookies</li>
+                    <li>Tilgængelighed</li>
+                </ul>
+            </section>
+        </nav>
+    </footer>
+
 </body>
 
 <script src="navigation.js"></script>

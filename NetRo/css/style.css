@@ -530,6 +530,100 @@ nav{
     margin-bottom: 60px;
 }
 
+/*------------------- UNDERSIDE KONTAKTFORUMLAR ---------------------*/
+
+
+/*Kontaktform*/
+
+.kontaktformular h1{
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #0d1a2b;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.kontaktformular p{
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+
+.kontaktform { 
+  border-radius: 12px;
+  background-color: #0d1a2b;
+  padding: 1.3em;
+  width: 40%;
+  margin: 0 auto; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 5em;
+}
+
+input[type=email], select, textarea{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-top: 0.6em;
+    margin-bottom: 1.1em;
+}
+
+.custom-select{
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 0.6em;
+    margin-bottom: 1.1em;
+}
+
+select, input[type=radio], input[type=submit]{
+    cursor: pointer;
+}
+
+fieldset{
+    border-color: white;
+    border-style: dotted;
+    padding: 10px 10px;
+    margin-top: 0.6em;
+    margin-bottom: 1.2em;
+}
+
+input[type=submit]{
+    background-color: #E69A27;
+    color: white;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+input[type=submit]:hover{
+    background-color: #d38510;
+}
+
+::placeholder{
+    color: #0d1a2b;
+}
+
+/*Andre style elementer*/
+
+.visually-hidden2{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 
 /* MOBIL + TABLET (op til 768px) */
 
@@ -779,7 +873,7 @@ nav{
     }
 
     /* PHISHING CONTENT */
-    
+
     .phishing-content nav[aria-label="Brødkrumme-navigation"] ol {
         display: none;
     }
@@ -851,4 +945,39 @@ nav{
     .footer-text li{
     margin: 3px 0;
     }
+
+    /* KONTAKT FORMULAR */
+
+    .kontaktformular h1 {
+        font-size: 24px;
+        padding-top: 2rem;
+    }
+
+    .kontaktformular p {
+        font-size: 16px;
+        padding-bottom: 1.5rem;
+    }
+
+    .kontaktform {
+        width: 90%;      /* Fylder næsten hele skærmen */
+        padding: 1em;
+        font-size: 1rem;
+    }
+
+    input[type=email],
+    select,
+    textarea {
+        font-size: 1rem;  /* Mindre tekst til mobil */
+        padding: 0.8em;
+    }
+
+    fieldset {
+        padding: 8px;
+    }
+
+    input[type=submit] {
+        font-size: 16px;
+        padding: 0.7em 1.2em;
+    }
+
 }
